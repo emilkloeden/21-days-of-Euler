@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+#include <iostream> // Preprocesser declaration to enable output to stdio
+using namespace std; // Without this I'd have to write //std.cout
 
 int main()
 {
