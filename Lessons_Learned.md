@@ -23,7 +23,10 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 2. There is an C++ interpreter on tutorialspoint.com to save compilation (although once I download gcc I'd like to get more comfortable with it).
 3. Arrays in C are immutable (the length cannot change). As such I realised an even simpler solution, instead of summing the contents of an array, I declared a variable of value 0 and added to it each iteration where the divisible by 3 or 5 condition returned true.
 4. C syntax is refreshingly similar to javascript. This is nice.
- 
+
+## Bash-specific
+Oh I _really_ did not enjoy this. I love the idea of bash scripting, running input and piping it through other programs, but the syntax was frustratingly finicky and confusing.
+1. i = 1 is not equal to i=1. Remember this.
  
 # Problem 2
 ## Problem Description:
