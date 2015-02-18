@@ -58,7 +58,22 @@ instead of:
 7. Ruby has a for a in expression syntax much like python's for loops. I didn't get to use this but I would like to remember it for the next Ruby solution. It is functionally equivalent to Array.each { |a| a.expression }
 
 # Problem 6
-_to come..._
+## Problem description:
+The sum of the squares of the first ten natural numbers is,
+
+12 + 22 + ... + 102 = 385
+The square of the sum of the first ten natural numbers is,
+
+(1 + 2 + ... + 10)2 = 552 = 3025
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
+
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+## Breaking it down:
+Calculate the square of the sum of a set of numbers. Calculate the sum of the square of each number in the same set. Subtract the latter from the former.
+
+## C++ Specific:
+1. Again, to avoid using arrays or vectors (see problem 18), I iterated from 1 to 100 performing the calculations required and then subtracted one number from the other.
 
 # Problems 18 and 67
 ## Problem description:
@@ -81,3 +96,8 @@ Oh wow. I struggled and learned a lot in solving this one.
 8. Vectors require a parameter type described as so: ```vector<int> myVector;```. A two-dimensional vector of integers is described as vector<vector<int> >```. Note the seperating space between greater-thans (this is required, else gcc throws a fit).
 9. Command line arguments are realised using syntax ```int main(int argc, char* argv[]) {...}``` where argc is a count of arguments (including the program name running and argv is a space-delimited array).
 10. Functions must be declared before they are called. Easiest way to do this is to define all functions at the top of the document and declare them later.
+
+## Ruby Specific
+I kinda just nutted this one out. The algorithm was pretty well ripped out of the C++ solution which itself closely followed one I'd used in Javascript previously that in turn was copied from somewhere. Needless to say, I'm quite over 'the algorithm'. Parsing a file was interesting and again I could do it with a one-liner (Suck it C++: 2 functions and 40-odd lines later...)
+
+1. Ruby has a nice IO.readlines(filename) method which opens a file, splits it into an array using a separator (newline by default), and closes it. Using this and a couple of .map calls, I could easily parse the file into a 2d integer array.
